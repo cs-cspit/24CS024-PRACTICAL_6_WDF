@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Form</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #2c2c54, #1e1e2f);
+      color: #f0f0f0;
+    }
+    .main {
+      background: #2a2a3b;
+      padding: 35px 40px;
+      border-radius: 12px;
+      box-shadow: 0px 6px 18px rgba(0,0,0,0.6);
+      width: 350px;
+      text-align: center;
+    }
+    .main h1 {
+      margin-bottom: 20px;
+      font-size: 26px;
+      font-weight: bold;
+      color: #6c63ff;
+    }
+    label {
+      display: block;
+      text-align: left;
+      margin-bottom: 5px;
+      font-weight: 500;
+      font-size: 14px;
+      color: #ddd;
+    }
+    input {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 18px;
+      border: 1px solid #444;
+      border-radius: 8px;
+      font-size: 15px;
+      outline: none;
+      background: #1e1e2f;
+      color: #f0f0f0;
+      transition: 0.3s;
+    }
+    input::placeholder {
+      color: #aaa;
+    }
+    input:focus {
+      border-color: #6c63ff;
+      box-shadow: 0 0 6px rgba(108, 99, 255, 0.5);
+    }
+    .btn button {
+      width: 100%;
+      padding: 12px;
+      background: #6c63ff;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      color: #fff;
+      transition: 0.3s;
+    }
+    .btn button:hover {
+      background: #574bff;
+      transform: translateY(-2px);
+    }
+    .btn button:active {
+      transform: scale(0.98);
+    }
+  </style>
+</head>
+<body>
+  <form action="process.php" method="post">
+    <div class="main">
+      <h1>Register</h1>
+      <label for="name">Name:</label>
+      <input type="text" name="name" placeholder="Enter your name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" name="email" placeholder="Enter your email" required>
+
+      <div class="btn">
+        <button type="submit">Submit</button>
+      </div>
+    </div>
+  </form>
+</body>
+</html>
